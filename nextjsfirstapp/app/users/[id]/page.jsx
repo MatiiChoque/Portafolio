@@ -10,7 +10,15 @@ export default async function UserPage({ params }) {
   return (
     <div>
       <h1>User Details</h1>
-      {JSON.stringify(user)}
+      <div>
+        <img src={user.avatar} alt="" />
+        <div>
+          <h3>
+            {user.id} {user.first_name} {user.last_name}
+          </h3>
+          <p>{user.email}</p>
+        </div>
+      </div>
     </div>
   );
 }
