@@ -9,7 +9,7 @@ async function fetchUsers() {
 export default async function IndexPage() {
   const users = await fetchUsers();
   return (
-    <div className="container py-4">
+    <div>
       <h1>Index Page</h1>
     </div>
   );
