@@ -22,6 +22,7 @@ export default async function IndexPage() {
           </div>
           <div className="col-md-8">
             <h1>Matias Choque</h1>
+            <h3>Full Stack Developer</h3>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Consequatur, quis distinctio similique neque ipsam iusto! Nostrum,
