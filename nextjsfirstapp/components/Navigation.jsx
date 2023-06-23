@@ -5,7 +5,7 @@ export default function Navigation() {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
         <Link className="navbar-brand" href="/">
-          Next First App
+          Portafolio
         </Link>
         <button
           className="navbar-toggler"
@@ -20,11 +20,11 @@ export default function Navigation() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav ms-auto">
-            <Link className="nav-link" href="/about">
-              About
+            <Link className="nav-link" href="/blog">
+              Blog
             </Link>
-            <Link className="nav-link" href="/services">
-              Services
+            <Link className="nav-link" href="/github">
+              Github
             </Link>
           </div>
         </div>
