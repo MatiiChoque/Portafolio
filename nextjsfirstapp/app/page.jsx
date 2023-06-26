@@ -1,5 +1,5 @@
 import Users from "@/components/Users";
-import { skills } from "@/profile";
+import { skills, experience } from "@/profile";
 
 async function fetchUsers() {
   const res = await fetch("https://reqres.in/api/users");
@@ -63,6 +63,17 @@ export default async function IndexPage() {
           <div className="card bd-ligth">
             <div className="card-body">
               <h1>Experiencia</h1>
+              <ul>
+                {experience?.map(({ title, description, from, to }, index) => (
+                  <li key={index}>
+                    <h3>{title}</h3>
+                    <h5>
+                      {from}-{to}
+                    </h5>
+                    <p>{description}</p>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
