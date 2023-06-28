@@ -88,9 +88,11 @@ export default async function IndexPage() {
               </div>
             </div>
             {projects?.map(({ name, description, image }, i) => (
-              <div className="col-md-4" key={i}>
-                <div className="card">
-                  <img src={image} alt="" />
+              <div className="col-md-4 p-2" key={i}>
+                <div className="card h-100">
+                  <div className="overflow">
+                    <img src={image} alt="" className="card-img-top" />
+                  </div>
                   <div className="card-body">
                     <h3>{name}</h3>
                     <p>{description}</p>
@@ -100,6 +102,7 @@ export default async function IndexPage() {
               </div>
             ))}
           </div>
+          <div className="col-md-12"></div>
         </div>
       </div>
     </>
