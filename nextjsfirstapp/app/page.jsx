@@ -1,4 +1,5 @@
 import Users from "@/components/Users";
+import Link from "next/link";
 import { skills, experience, projects } from "@/profile";
 
 async function fetchUsers() {
@@ -101,8 +102,12 @@ export default async function IndexPage() {
                 </div>
               </div>
             ))}
+            <div className="text-center mt-4">
+              <Link href="/portafolio" className="btn btn-outline-light">
+                More Projects
+              </Link>
+            </div>
           </div>
-          <div className="col-md-12"></div>
         </div>
       </div>
     </>

@@ -21,6 +21,13 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Navigation />
         <main className="container py-4">{children}</main>
+        <footer className="bg-dark text-light text-center">
+          <div className="container p-4">
+            <h1>&copy; Matias Choque Portafolio</h1>
+            <p>2023 - {new Date().getFullYear()}</p>
+            <p>All rights reserved.</p>
+          </div>
+        </footer>
       </body>
     </html>
   );
