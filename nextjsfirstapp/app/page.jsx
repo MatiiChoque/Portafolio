@@ -10,13 +10,7 @@ export default async function IndexPage() {
         <div className="card card-body bg-secondary text-light">
           <div className="row">
             <div className="col-md-4">
-              <Image
-                src={perfil}
-                alt=""
-                width={426}
-                height={240}
-                layout="responsive"
-              />
+              <Image src={perfil} alt="" width={426} height={240} />
             </div>
             <div className="col-md-8">
               <h1>Matias Choque</h1>

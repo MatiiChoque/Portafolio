@@ -10,7 +10,6 @@ const cargarDatos = () => {
 
 export default async function ServicePage() {
   const datos = await cargarDatos();
-  console.log(datos);
   return (
     <div>
       <div className="row">

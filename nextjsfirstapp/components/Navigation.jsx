@@ -20,9 +20,6 @@ export default function Navigation() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav ms-auto">
-            <Link className="nav-link" href="/blog">
-              Blog
-            </Link>
             <Link className="nav-link" href="/github">
               Github
             </Link>
