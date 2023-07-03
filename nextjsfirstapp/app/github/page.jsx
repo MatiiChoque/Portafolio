@@ -8,19 +8,23 @@ const cargarDatos = () => {
 
 export default async function ServicePage() {
   const datos = await cargarDatos();
-  console.log(datos);
+
   return (
     <div>
       <div className="row">
         <div className="col-md-4 offset-md-4">
           <div className="card card-body text-center">
             <h1>{datos.name}</h1>
-            <img src={datos.avatar_url} alt="" />
-            <p>{datos.bio}</p>
+            <img
+              src={datos.avatar_url}
+              alt=""
+              style={{ borderRadius: "50%", border: "1px solid black" }}
+            />
+            <p className="my-2">{datos.bio}</p>
             <Link
               href={`${datos.html_url}`}
               target="_blank"
-              className="btn btn-outline-secondary"
+              className="btn btn-outline-secondary "
             >
               Ir a Github
             </Link>

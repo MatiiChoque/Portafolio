@@ -34,7 +34,7 @@ export default async function IndexPage() {
                 y trabajar en equipo como también soy una persona abierta a los
                 feedbacks constructivos.
               </p>
-              <a href="/hireme">Contratame!</a>
+              {/* <a href="/hireme">Contratame!</a> */}
             </div>
           </div>
         </div>
@@ -98,14 +98,14 @@ export default async function IndexPage() {
                   <div className="card-body">
                     <h3>{name}</h3>
                     <p>{description}</p>
-                    <a href="#!">Know more</a>
+                    <a href="#!">Más Informacion</a>
                   </div>
                 </div>
               </div>
             ))}
             <div className="text-center mt-4">
               <Link href="/portafolio" className="btn btn-outline-light">
-                More Projects
+                Más Proyectos
               </Link>
             </div>
           </div>
