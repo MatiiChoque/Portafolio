@@ -38,7 +38,7 @@ export const experience = [
 export const projects = [
   {
     name: "SixCircle",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, quis distinctio similique neque ipsam iusto! Nostrum, praesentium dicta voluptatibus sequi consectetur delectus est deleniti earum sunt similique nihil provident culpa?`,
-    image: "Captura.JPG",
+    description: `Diseñamos y desarrollamos una aplicación orientada a un MarketPlace.`,
+    image: "Home.JPG",
   },
 ];

@@ -20,18 +20,30 @@ export default async function IndexPage() {
                 src="MATIASCHOQUE.jpg"
                 alt=""
                 className="img-fluid"
-                style={{ width: "100%", height: "100%" }}
+                style={{ width: "100%", height: "100%", aspectRatio: "16/9" }}
               />
             </div>
             <div className="col-md-8">
               <h1>Matias Choque</h1>
               <h3>Full Stack Developer</h3>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Consequatur, quis distinctio similique neque ipsam iusto!
-                Nostrum, praesentium dicta voluptatibus sequi consectetur
-                delectus est deleniti earum sunt similique nihil provident
-                culpa?
+                ¡Hola! Soy Matías, un apasionado por la tecnología y la
+                programación. 🙋‍♂️ Desde pequeño sentí un gran interés por la
+                tecnología, soy estudiante universitario de la carrera
+                Ingeniería Informática, aunque por motivos de fuerza mayor tuve
+                que suspenderlo temporalmente, aun así, sigo en constante
+                crecimiento consumiendo todo tipo de información y cursos,
+                actualmente acabo de terminar un bootcamp en programación
+                (SoyHenry). 📚📖 Tengo experiencia en el manejo de grupos,
+                liderazgo , capacitación y entrenamiento de personas. Trabaje 9
+                años en un Hospital Militar de los cuales casi 8 años y 7 meses
+                los desempeñe como encargado.🤝🏻 ✔️ Me caracterizo por ser una
+                persona organizada, responsable, comprometida y dedicada. Busco
+                siempre cumplir con los objetivos de la mejor manera adaptándome
+                al entorno constantemente. ♻️ Me gusta trabajar y generar
+                ambientes laborales confortables y organizados. Disfruto ayudar
+                y trabajar en equipo como también soy una persona abierta a los
+                feedbacks constructivos.
               </p>
               <a href="/hireme">Contratame!</a>
             </div>
