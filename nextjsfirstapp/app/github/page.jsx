@@ -1,28 +1,26 @@
-import Image from "next/image";
 import Link from "next/link";
 
 const cargarDatos = () => {
-  return fetch("https://api.github.com/users/MatiiChoque", {
-    cache: "no-store",
-  })
+  return fetch("https://api.github.com/users/MatiiChoque")
     .then((res) => res.json())
     .then((data) => data);
 };
 
 export default async function ServicePage() {
   const datos = await cargarDatos();
+  console.log(datos);
   return (
     <div>
       <div className="row">
         <div className="col-md-4 offset-md-4">
           <div className="card card-body text-center">
             <h1>{datos.name}</h1>
-            <Image src={datos.avatar_url} alt="" />
-            <p className="my-2">{datos.bio}</p>
+            <img src={datos.avatar_url} alt="" />
+            <p>{datos.bio}</p>
             <Link
-              href={datos.html_url}
+              href={`${datos.html_url}`}
               target="_blank"
-              className="btn btn-outline-secondary my-2"
+              className="btn btn-outline-secondary"
             >
               Ir a Github
             </Link>
