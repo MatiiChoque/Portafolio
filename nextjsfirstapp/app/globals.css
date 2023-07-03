@@ -10,3 +10,7 @@
 .overflow .card-img-top:hover {
   transform: scale(1.8);
 }
+img {
+  width: 100%;
+  height: auto;
+}

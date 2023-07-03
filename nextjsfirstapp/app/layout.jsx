@@ -1,9 +1,9 @@
 "use client";
 import Navigation from "@/components/Navigation";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const fuente = Montserrat({ weight: "400", subsets: ["latin"] });
 
 export const metadata = {
   title: "Matias Choque - Portafolio",
@@ -18,12 +18,8 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
           href="https://bootswatch.com/5/cosmo/bootstrap.min.css"
         />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.css"
-        />
       </head>
-      <body className={inter.className}>
+      <body className={fuente.className}>
         <Navigation />
         <main className="container py-4">{children}</main>
         <footer className="bg-dark text-light text-center">

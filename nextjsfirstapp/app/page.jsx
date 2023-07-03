@@ -1,26 +1,21 @@
-import Users from "@/components/Users";
 import Link from "next/link";
+import Image from "next/image";
+import perfil from "../public/MATIASCHOQUE.jpg";
 import { skills, experience, projects } from "@/profile";
 
-async function fetchUsers() {
-  const res = await fetch("https://reqres.in/api/users");
-  const data = await res.json();
-  return data.data;
-}
-
 export default async function IndexPage() {
-  const users = await fetchUsers();
   return (
     <>
       <header className="row">
         <div className="card card-body bg-secondary text-light">
           <div className="row">
             <div className="col-md-4">
-              <img
-                src="MATIASCHOQUE.jpg"
+              <Image
+                src={perfil}
                 alt=""
-                className="img-fluid"
-                style={{ width: "100%", height: "100%", aspectRatio: "16/9" }}
+                width={426}
+                height={240}
+                layout="responsive"
               />
             </div>
             <div className="col-md-8">

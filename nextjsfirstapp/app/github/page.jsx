@@ -1,7 +1,9 @@
 import Link from "next/link";
 
 const cargarDatos = () => {
-  return fetch("https://api.github.com/users/MatiiChoque")
+  return fetch("https://api.github.com/users/MatiiChoque", {
+    cache: "no-store",
+  })
     .then((res) => res.json())
     .then((data) => data);
 };
@@ -16,11 +18,11 @@ export default async function ServicePage() {
           <div className="card card-body text-center">
             <h1>{datos.name}</h1>
             <img src={datos.avatar_url} alt="" />
-            <p>{datos.bio}</p>
+            <p className="my-2">{datos.bio}</p>
             <Link
               href={datos.html_url}
               target="_blank"
-              className="btn tbn-outline-secondary"
+              className="btn btn-outline-secondary my-2"
             >
               Ir a Github
             </Link>
