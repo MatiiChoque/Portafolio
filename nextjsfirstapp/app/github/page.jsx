@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const cargarDatos = () => {
@@ -16,7 +17,7 @@ export default async function ServicePage() {
         <div className="col-md-4 offset-md-4">
           <div className="card card-body text-center">
             <h1>{datos.name}</h1>
-            <img src={datos.avatar_url} alt="" />
+            <Image src={datos.avatar_url} alt="" />
             <p className="my-2">{datos.bio}</p>
             <Link
               href={datos.html_url}
