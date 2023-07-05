@@ -34,7 +34,9 @@ export default async function IndexPage() {
                 y trabajar en equipo como también soy una persona abierta a los
                 feedbacks constructivos.
               </p>
-              {/* <a href="/hireme">Contratame!</a> */}
+              <a href="Resume.pdf" download="CV Matias Choque.pdf">
+                Curriculum Vitaee
+              </a>
             </div>
           </div>
         </div>
