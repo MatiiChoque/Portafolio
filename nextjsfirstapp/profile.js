@@ -19,9 +19,24 @@ export const skills = [
     skill: "Next.js",
     percentage: 20,
   },
+  {
+    skill: "Express",
+    percentage: 20,
+  },
+  {
+    skill: "Redux",
+    percentage: 20,
+  },
 ];
 
 export const experience = [
+  {
+    title: "Encargado administrativo - Finanzas - Hospital Militar",
+    description:
+      "Rendicion, gestión y control de combustibles, lubricantes y viveres.",
+    from: 2013,
+    to: 2022,
+  },
   {
     title: "Six Circle",
     description: "MarketPlace",

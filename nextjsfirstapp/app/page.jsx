@@ -79,6 +79,7 @@ export default async function IndexPage() {
                       {from}-{to}
                     </h5>
                     <p>{description}</p>
+                    <a href="#!">Más...</a>
                   </li>
                 ))}
               </ul>
