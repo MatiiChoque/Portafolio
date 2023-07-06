@@ -41,35 +41,22 @@ export default async function IndexPage() {
                 download="CV Matias Choque.pdf"
                 className="btn btn-outline-light my-2"
               >
-                Curriculum Vitae
+                Descargar CV
               </a>
             </div>
           </div>
         </div>
       </header>
       {/*Segunda Seccion*/}
-      <div className="row py-2">
-        <div className="col-md-4">
+      <div className=" py-2">
+        <div className="col-md-12 pb-2">
           <div className="card  bd-ligth">
             <div className="card-body">
-              <h1>Tecnologias</h1>
-
-              {skills?.map(({ skill, percentage }, i) => (
-                <div className="py-3" key={i}>
-                  <h5>{skill}</h5>
-                  <div className="progress">
-                    <div
-                      className="progress-bar"
-                      role="progressbar"
-                      style={{ width: `${percentage}%` }}
-                    ></div>
-                  </div>
-                </div>
-              ))}
+              <h1>Informacion Personal</h1>
             </div>
           </div>
         </div>
-        <div className="col-md-8">
+        <div className="col-md-12">
           <div className="card bd-ligth">
             <div className="card-body">
               <h1>Experiencia</h1>
@@ -116,6 +103,27 @@ export default async function IndexPage() {
                 Más Proyectos
               </Link>
             </div>
+          </div>
+        </div>
+      </div>
+      {/* {Tecnologias} */}
+      <div className="col-md-12 pt-2">
+        <div className="card  bg-dark text-light">
+          <div className="card-body">
+            <h1>Tecnologias</h1>
+
+            {skills?.map(({ skill, percentage }, i) => (
+              <div className="py-3" key={i}>
+                <h5>{skill}</h5>
+                <div className="progress">
+                  <div
+                    className="progress-bar"
+                    role="progressbar"
+                    style={{ width: `${percentage}%` }}
+                  ></div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
