@@ -9,7 +9,7 @@ export default async function IndexPage() {
       <header className="row">
         <div className="card card-body bg-secondary text-light">
           <div className="row">
-            <div className="col-md-4">
+            <div className="col-md-3">
               <Image
                 src={perfil}
                 alt=""
