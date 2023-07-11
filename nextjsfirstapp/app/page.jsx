@@ -53,6 +53,17 @@ export default async function IndexPage() {
           <div className="card  bd-ligth">
             <div className="card-body">
               <h1>Informacion Personal</h1>
+              <ul>
+                <li>
+                  <p>{profile.presentacion}</p>
+                </li>
+                <li>
+                  <p>{profile.background}</p>
+                </li>
+                <li>
+                  <p>{profile.pasatiempos}</p>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
