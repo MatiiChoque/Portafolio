@@ -58,10 +58,10 @@ export default async function IndexPage() {
                   <p>{profile.presentacion}</p>
                 </li>
                 <li>
-                  <p>{profile.background}</p>
+                  <p>{profile.pasatiempos}</p>
                 </li>
                 <li>
-                  <p>{profile.pasatiempos}</p>
+                  <p>{profile.background}</p>
                 </li>
               </ul>
             </div>
