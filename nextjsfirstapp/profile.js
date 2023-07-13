@@ -1,31 +1,38 @@
+import ExpressL from "./public/ExpressL.png";
+import JavascriptL from "./public/JavaScriptL.png";
+import Nodejs from "./public/NodejsL.png";
+import Mongodb from "./public/MongoL.png";
+import Nextjs from "./public/NextjsL.png";
+import React from "./public/ReactjsL.png";
+import Redux from "./public/ReduxL.png";
 export const skills = [
   {
     skill: "Javascript",
-    percentage: 80,
+    image: JavascriptL,
   },
   {
     skill: "React.js",
-    percentage: 70,
+    image: React,
   },
   {
     skill: "Mongodb",
-    percentage: 50,
+    image: Mongodb,
   },
   {
     skill: "Node.js",
-    percentage: 80,
+    image: Nodejs,
   },
   {
     skill: "Next.js",
-    percentage: 20,
+    image: Nextjs,
   },
   {
     skill: "Express",
-    percentage: 20,
+    image: ExpressL,
   },
   {
     skill: "Redux",
-    percentage: 20,
+    image: Redux,
   },
 ];
 
