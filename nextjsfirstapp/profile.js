@@ -47,7 +47,7 @@ export const experience = [
   {
     title: "Six Circle",
     description:
-      "Formé parte del Back junto a otra persona, en donde pude realizar mis contribuciones organizando los servidores , agregando varias funcionalidades al sistema y ayudando en la gestión del funcionamiento de la pagina web, creamos la base de datos con MongoDB.",
+      "Formé parte del Back, en donde pude realizar mis contribuciones organizando los servidores , agregando varias funcionalidades al sistema y ayudando en la gestión del funcionamiento de la pagina web, creamos la base de datos con MongoDB.",
     from: "May 2023",
     to: " Jun 2023",
   },
@@ -62,16 +62,16 @@ export const experience = [
 
 export const projects = [
   {
+    id: 1,
     name: "SixCircle",
     description: `Diseñamos y desarrollamos una aplicación orientada a un MarketPlace.`,
     image: "Home.JPG",
   },
 ];
 export const profile = {
-  presentacion:
-    "¡Hola! Soy Matías, un apasionado por la tecnología y la programación. Desde pequeño sentí un gran interés por la tecnología, soy estudiante universitario de la carrera Ingeniería Informática, aunque por motivos de fuerza mayor tuve que suspenderlo temporalmente, aun así, sigo en constante crecimiento consumiendo todo tipo de información y cursos, actualmente acabo de terminar un bootcamp en programación (SoyHenry).",
+  presentacion: `¡Hola! Soy Matías, un apasionado por la tecnología y la programación. Desde pequeño sentí un gran interés por la tecnología, soy estudiante universitario de la carrera Ingeniería Informática, e igualmente sigo en constante crecimiento aprovechando todo tipo de información y cursos, actualmente acabo de terminar un bootcamp en programación (SoyHenry).`,
   background:
-    "Tengo experiencia en el manejo de grupos, liderazgo , capacitación y entrenamiento de personas. Trabajé 9 años en un Hospital Militar de los cuales casi 8 años y 6 meses los desempeñe como encargado. Me caracterizo por ser una persona organizada, responsable, comprometida y dedicada. Busco siempre cumplir con los objetivos de la mejor manera adaptándome al entorno constantemente. Me gusta trabajar y generar ambientes laborales confortables y organizados. Disfruto ayudar y trabajar en equipo como también soy una persona abierta a los feedbacks constructivos.",
+    "Tengo experiencia en el manejo de grupos, liderazgo , capacitación y entrenamiento de personas. Trabajé 9 años en un Hospital Militar de los cuales casi 8 años y 6 meses los desempeñe como encargado. Me caracterizo por ser una persona organizada, responsable, comprometida y dedicada. Busco siempre cumplir con los objetivos de la mejor manera adaptándome al entorno constantemente. Me gusta trabajar y generar ambientes laborales confortables y organizados. Disfruto ayudar y trabajar en equipo, también soy una persona abierta a los feedbacks constructivos.",
   pasatiempos:
     "En mis tiempos libres disfruto de las caminatas, natación y videojuegos, pero sobretodo disfruto mucho de realizar viajes y contemplar todo tipo de paisajes en el camino.",
 };

@@ -70,17 +70,15 @@ export default async function IndexPage() {
         <div className="col-md-12">
           <div className="card bd-ligth">
             <div className="card-body">
-              <h1>Experiencia</h1>
+              <h1>Experiencia Laboral</h1>
               <ul>
-                {experience?.map(({ title, description, from, to }, index) => (
-                  <li key={index}>
-                    <h3>{title}</h3>
-                    <h5>
-                      {from} - {to}
-                    </h5>
-                    <p>{description}</p>
-                  </li>
-                ))}
+                <li>
+                  <h3>{experience[0].title}</h3>
+                  <h5>
+                    {experience[0].from} - {experience[0].to}
+                  </h5>
+                  <p>{experience[0].description}</p>
+                </li>
               </ul>
             </div>
           </div>
