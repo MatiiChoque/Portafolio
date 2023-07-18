@@ -70,45 +70,45 @@ export default async function IndexPage() {
         <div className="col-md-12">
           <div className="card bd-ligth">
             <div className="card-body">
-              <h1>Experiencia</h1>
+              <h1>Experiencia Laboral</h1>
               <ul>
-                {experience?.map(({ title, description, from, to }, index) => (
-                  <li key={index}>
-                    <h3>{title}</h3>
-                    <h5>
-                      {from} - {to}
-                    </h5>
-                    <p>{description}</p>
-                  </li>
-                ))}
+                <li>
+                  <h3>{experience[0].title}</h3>
+                  <h5>
+                    {experience[0].from} - {experience[0].to}
+                  </h5>
+                  <p>{experience[0].description}</p>
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
       {/*Portafolio*/}
-      <div className="row">
+      <div className="">
         <div className="col-md-12">
           <div className="card card-body bg-dark">
-            <div className="row">
+            <div className="">
               <div className="col md-12">
                 <h1 className="text-center text-light">Portafolio</h1>
               </div>
             </div>
-            {projects?.map(({ name, description, image }, i) => (
-              <div className="col-md-4 p-2" key={i}>
-                <div className="card h-100">
-                  <div className="overflow">
-                    <img src={image} alt="" className="card-img-top" />
-                  </div>
-                  <div className="card-body">
-                    <h3>{name}</h3>
-                    <p>{description}</p>
-                    <a href="#!">Más Informacion</a>
+            <div className="row">
+              {projects?.map(({ name, description, image }, i) => (
+                <div className="col-md-4 p-2" key={i}>
+                  <div className="card h-100">
+                    <div className="overflow">
+                      <img src={image} alt="" className="card-img-top" />
+                    </div>
+                    <div className="card-body">
+                      <h3>{name}</h3>
+                      <p>{description}</p>
+                      <a href="#!">Más Informacion</a>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
             <div className="text-center mt-4">
               <Link href="/portafolio" className="btn btn-outline-light">
                 Más Proyectos
@@ -119,10 +119,10 @@ export default async function IndexPage() {
       </div>
       {/* {Tecnologias} */}
       <div className="col-md-12 pt-2">
-        <div className="card bg-dark text-light">
+        <div className="card bd-ligth">
           <div className="card-body">
             <h1>Tecnologias</h1>
-            <div className="">
+            <div className="row">
               {skills?.map(({ skill, image }, i) => (
                 <div className="py-3" key={i}>
                   <h5>{skill}</h5>
