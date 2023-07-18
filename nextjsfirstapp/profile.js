@@ -5,10 +5,21 @@ import Mongodb from "./public/MongoL.png";
 import Nextjs from "./public/NextjsL.png";
 import React from "./public/ReactjsL.png";
 import Redux from "./public/ReduxL.png";
+import Html from "./public/htmlL.png";
+import Css from "./public/cssL.png";
+
 export const skills = [
   {
     skill: "Javascript",
     image: JavascriptL,
+  },
+  {
+    skill: "Css",
+    image: Css,
+  },
+  {
+    skill: "Html",
+    image: Html,
   },
   {
     skill: "React.js",
@@ -67,9 +78,21 @@ export const projects = [
     description: `Diseñamos y desarrollamos una aplicación orientada a un MarketPlace.`,
     image: "Home.JPG",
   },
+  {
+    id: 2,
+    name: "AppCountries",
+    description: `Esta aplicación web está basada en React y está creada para tener un lugar de consulta sobre paises de todo el mundo permitiendo poder buscar, filtrar y ver detalles de cada país junto con sus actividades correspondientes.`,
+    image: "picountries.JPG",
+  },
+  {
+    id: 3,
+    name: "Portafolio",
+    description: `Considero a mi portafolio como un proyecto en sí mismo, ya que tuve la oportunidad de aplicar la mayor parte de los nuevos conocimientos que adquirí como desarrollador web. Nuevas técnicas de diseño y, una versión más refinada de proyectos anteriores le dan a mi portfolio nuevas cotas de calidad.`,
+    image: "portafolio.JPG",
+  },
 ];
 export const profile = {
-  presentacion: `¡Hola! Soy Matías, un apasionado por la tecnología y la programación. Desde pequeño sentí un gran interés por la tecnología, soy estudiante universitario de la carrera Ingeniería Informática, e igualmente sigo en constante crecimiento aprovechando todo tipo de información y cursos, actualmente acabo de terminar un bootcamp en programación (SoyHenry).`,
+  presentacion: `¡Hola! Gusto en conocerte, Soy Matías, un apasionado por la tecnología y la programación. Desde pequeño sentí un gran interés por la tecnología, soy estudiante universitario de la carrera Ingeniería Informática, e igualmente sigo en constante crecimiento aprovechando todo tipo de información y cursos, actualmente acabo de terminar un bootcamp en programación (SoyHenry).`,
   background:
     "Tengo experiencia en el manejo de grupos, liderazgo , capacitación y entrenamiento de personas. Trabajé 9 años en un Hospital Militar de los cuales casi 8 años y 6 meses los desempeñe como encargado. Me caracterizo por ser una persona organizada, responsable, comprometida y dedicada. Busco siempre cumplir con los objetivos de la mejor manera adaptándome al entorno constantemente. Me gusta trabajar y generar ambientes laborales confortables y organizados. Disfruto ayudar y trabajar en equipo, también soy una persona abierta a los feedbacks constructivos.",
   pasatiempos:
