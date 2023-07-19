@@ -1,4 +1,3 @@
-
 export const skills = [
   {
     skill: "Javascript",
@@ -36,6 +35,18 @@ export const skills = [
     skill: "Redux",
     image: "ReduxL.png",
   },
+  {
+    skill: "PostgreSQL",
+    image: "PostgreSQLL.png",
+  },
+  {
+    skill: "Bootstrap",
+    image: "BootstrapL.png",
+  },
+  {
+    skill: "Git",
+    image: "GitL.png",
+  },
 ];
 
 export const experience = [
@@ -72,13 +83,14 @@ export const projects = [
   {
     id: 2,
     name: "AppCountries",
-    description: `Esta aplicación web está basada en React y está creada para tener un lugar de consulta sobre paises de todo el mundo permitiendo poder buscar, filtrar y ver detalles de cada país junto con sus actividades correspondientes.`,
+    description: `Esta aplicación web está creada para tener un lugar de consulta sobre paises de todo el mundo permitiendo poder buscar, filtrar y ver detalles de cada país.`,
     image: "picountries.JPG",
   },
   {
     id: 3,
     name: "Portafolio",
-    description: `Considero a mi portafolio como un proyecto en sí mismo, ya que tuve la oportunidad de aplicar la mayor parte de los nuevos conocimientos que adquirí como desarrollador web. Nuevas técnicas de diseño y, una versión más refinada de proyectos anteriores le dan a mi portfolio nuevas cotas de calidad.`,
+    description: `Considero a mi portafolio como un proyecto en sí mismo, ya que tuve la oportunidad de aplicar la mayor parte de los nuevos conocimientos que adquirí como desarrollador web.`,
+
     image: "portafolio.JPG",
   },
 ];

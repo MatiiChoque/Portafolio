@@ -103,17 +103,17 @@ export default async function IndexPage() {
                     <div className="card-body">
                       <h3>{name}</h3>
                       <p>{description}</p>
-                      <a href="#!">Más Informacion</a>
+                      {/* <a href="#!">Más Informacion</a> */}
                     </div>
                   </div>
                 </div>
               ))}
             </div>
-            <div className="text-center mt-4">
+            {/* <div className="text-center mt-4">
               <Link href="/portafolio" className="btn btn-outline-light">
                 Más Proyectos
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -122,14 +122,13 @@ export default async function IndexPage() {
         <div className="card bg-light ">
           <div className="card-body ">
             <h1 className="pb-2">Tecnologias</h1>
-            
+
             <div className="row row-cols-1 row-cols-md-6 g-4">
               {skills?.map(({ skill, image }, i) => (
-                <div className="col d-flex align-items-center">
-                <div className="card bg-light border-0">
-                <img src={image} className="card-img" alt="..."/>
-                
-              </div>
+                <div className="col d-flex align-items-center" key={i}>
+                  <div className="card bg-light border-0">
+                    <img src={image} className="card-img" alt="..." />
+                  </div>
                 </div>
               ))}
             </div>
