@@ -119,20 +119,17 @@ export default async function IndexPage() {
       </div>
       {/* {Tecnologias} */}
       <div className="col-md-12 pt-2">
-        <div className="card bd-ligth">
-          <div className="card-body">
-            <h1>Tecnologias</h1>
-            <div className="row">
+        <div className="card bg-light ">
+          <div className="card-body ">
+            <h1 className="pb-2">Tecnologias</h1>
+            
+            <div className="row row-cols-1 row-cols-md-6 g-4">
               {skills?.map(({ skill, image }, i) => (
-                <div className="py-3" key={i}>
-                  <h5>{skill}</h5>
-                  <Image
-                    src={image}
-                    alt=""
-                    width={426}
-                    height={240}
-                    style={{ width: "15%" }}
-                  />
+                <div className="col d-flex align-items-center">
+                <div className="card bg-light border-0">
+                <img src={image} className="card-img" alt="..."/>
+                
+              </div>
                 </div>
               ))}
             </div>
