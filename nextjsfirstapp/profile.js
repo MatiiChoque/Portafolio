@@ -1,49 +1,40 @@
-import ExpressL from "./public/ExpressL.png";
-import JavascriptL from "./public/JavaScriptL.png";
-import Nodejs from "./public/NodejsL.png";
-import Mongodb from "./public/MongoL.png";
-import Nextjs from "./public/NextjsL.png";
-import React from "./public/ReactjsL.png";
-import Redux from "./public/ReduxL.png";
-import Html from "./public/htmlL.png";
-import Css from "./public/cssL.png";
 
 export const skills = [
   {
     skill: "Javascript",
-    image: JavascriptL,
+    image: "JavaScriptL.png",
   },
   {
     skill: "Css",
-    image: Css,
+    image: "cssL.png",
   },
   {
     skill: "Html",
-    image: Html,
+    image: "htmlL.png",
   },
   {
     skill: "React.js",
-    image: React,
+    image: "ReactjsL.png",
   },
   {
     skill: "Mongodb",
-    image: Mongodb,
+    image: "MongoL.png",
   },
   {
     skill: "Node.js",
-    image: Nodejs,
+    image: "NodejsL.png",
   },
   {
     skill: "Next.js",
-    image: Nextjs,
+    image: "NextjsL.png",
   },
   {
     skill: "Express",
-    image: ExpressL,
+    image: "ExpressL.png",
   },
   {
     skill: "Redux",
-    image: Redux,
+    image: "ReduxL.png",
   },
 ];
 
