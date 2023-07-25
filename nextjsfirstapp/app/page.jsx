@@ -9,13 +9,17 @@ export default async function IndexPage() {
       <header className="row">
         <div className="card card-body bg-secondary text-light">
           <div className="row">
-            <div className="col-md-3">
+            <div className="col-md-3 d-flex justify-content-center">
               <Image
                 src={perfil}
                 alt=""
                 width={426}
                 height={240}
-                style={{ borderRadius: "50%" }}
+                style={{
+                  borderRadius: "50%",
+                  maxHeight: "300px",
+                  maxWidth: "300px",
+                }}
               />
             </div>
             <div
@@ -31,7 +35,11 @@ export default async function IndexPage() {
                   alt=""
                   width={125}
                   height={125}
-                  style={{ width: "4%", marginRight: "1%" }}
+                  style={{
+                    width: "4%",
+                    marginRight: "1%",
+                    backgroundColor: "#373a3c",
+                  }}
                 />
                 SALTA, ARGENTINA
               </h5>
@@ -50,7 +58,10 @@ export default async function IndexPage() {
       {/*Segunda Seccion*/}
       <div className=" py-2">
         <div className="col-md-12 pb-2">
-          <div className="card  bd-ligth">
+          <div
+            className="card  bd-ligth"
+            style={{ backgroundColor: "#e8ddcb" }}
+          >
             <div className="card-body">
               <h1>Informacion Personal</h1>
               <ul>
@@ -68,7 +79,7 @@ export default async function IndexPage() {
           </div>
         </div>
         <div className="col-md-12">
-          <div className="card bd-ligth">
+          <div className="card bd-ligth" style={{ backgroundColor: "#e8ddcb" }}>
             <div className="card-body">
               <h1>Experiencia Laboral</h1>
               <ul>
@@ -96,7 +107,10 @@ export default async function IndexPage() {
             <div className="row">
               {projects?.map(({ name, description, image }, i) => (
                 <div className="col-md-4 p-2" key={i}>
-                  <div className="card h-100">
+                  <div
+                    className="card h-100"
+                    style={{ backgroundColor: "#cdb380" }}
+                  >
                     <div className="overflow">
                       <img src={image} alt="" className="card-img-top" />
                     </div>
@@ -120,14 +134,23 @@ export default async function IndexPage() {
       {/* {Tecnologias} */}
       <div className="col-md-12 pt-2">
         <div className="card bg-light ">
-          <div className="card-body ">
+          <div className="card-body " style={{ backgroundColor: "#e8ddcb" }}>
             <h1 className="pb-2">Tecnologias</h1>
-
-            <div className="row row-cols-1 row-cols-md-6 g-4">
-              {skills?.map(({ skill, image }, i) => (
-                <div className="col d-flex align-items-center" key={i}>
+            {/* row row-cols-1 row-cols-md-6 g-4 */}
+            <div className="gallerytech">
+              {skills?.map(({ image }, i) => (
+                <div
+                  className="col d-flex align-items-center"
+                  style={{ maxWidth: "200px", maxHeight: "200px" }}
+                  key={i}
+                >
                   <div className="card bg-light border-0">
-                    <img src={image} className="card-img" alt="..." />
+                    <img
+                      src={image}
+                      className="card-img"
+                      alt="..."
+                      style={{ maxHeight: "200px", maxWidth: "200px" }}
+                    />
                   </div>
                 </div>
               ))}

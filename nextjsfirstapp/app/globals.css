@@ -15,5 +15,16 @@ img {
   height: auto;
 }
 .__className_f1548b {
-  background-color: rgb(7, 93, 119);
+  background-color: #031634;
+}
+.gallerytech {
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: 12rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  justify-items: center;
+  grid-auto-flow: dense;
+}
+.card img {
+  background-color: #e8ddcb;
 }
