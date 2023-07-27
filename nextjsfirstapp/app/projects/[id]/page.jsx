@@ -55,7 +55,7 @@ export default async function UserPage({ params }) {
                   </li>
                 </ul>
               ))}
-              <h4>Back:</h4>
+              <h4>Backend:</h4>
               {detail?.tecnologias.back.map((tech) => (
                 <ul>
                   <li>
