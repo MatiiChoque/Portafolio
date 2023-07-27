@@ -29,27 +29,40 @@ export default async function UserPage({ params }) {
                 width={500}
                 height={500}
               />
-              <div>
-                <p>{description}</p>
-              </div>
             </div>
           </div>
         </div>
         <div className="col-md-12 ">
           <div className="card" style={{ backgroundColor: "#e8ddcb" }}>
             <div className="card-body">
-              <h1>Informacion Personal</h1>
-              <ul>
-                <li>
-                  <p>hola</p>
-                </li>
-                <li>
-                  <p>hola1</p>
-                </li>
-                <li>
-                  <p>hola2</p>
-                </li>
-              </ul>
+              <h2>Descripcion</h2>
+              <h5>{description}</h5>
+              <p>{detail.cuerpo}</p>
+              <h2>Funcionalidades</h2>
+              {detail?.funcionalidades.map((funcion) => (
+                <ul>
+                  <li>
+                    <p>{funcion}</p>
+                  </li>
+                </ul>
+              ))}
+              <h2>Tecnologias y librerias</h2>
+              <h4>Front:</h4>
+              {detail?.tecnologias.front.map((tech) => (
+                <ul>
+                  <li>
+                    <p>{tech}</p>
+                  </li>
+                </ul>
+              ))}
+              <h4>Back:</h4>
+              {detail?.tecnologias.back.map((tech) => (
+                <ul>
+                  <li>
+                    <p>{tech}</p>
+                  </li>
+                </ul>
+              ))}
             </div>
           </div>
         </div>
