@@ -3,6 +3,7 @@ import Image from "next/image";
 import perfil from "../public/MATIASCHOQUE.jpg";
 import { profile, skills, experience, projects } from "@/profile";
 import ubicacion from "../public/pngegg.png";
+
 export default async function IndexPage() {
   return (
     <>
@@ -105,7 +106,7 @@ export default async function IndexPage() {
               </div>
             </div>
             <div className="row">
-              {projects?.map(({ name, description, image }, i) => (
+              {projects?.map(({ id, name, description, image }, i) => (
                 <div className="col-md-4 p-2" key={i}>
                   <div
                     className="card h-100"
@@ -117,7 +118,7 @@ export default async function IndexPage() {
                     <div className="card-body">
                       <h3>{name}</h3>
                       <p>{description}</p>
-                      {/* <a href="#!">Más Informacion</a> */}
+                      <Link href={`/projects/${id}`}>Más Informacion</Link>
                     </div>
                   </div>
                 </div>
@@ -136,7 +137,6 @@ export default async function IndexPage() {
         <div className="card bg-light ">
           <div className="card-body " style={{ backgroundColor: "#e8ddcb" }}>
             <h1 className="pb-2">Tecnologias</h1>
-            {/* row row-cols-1 row-cols-md-6 g-4 */}
             <div className="gallerytech">
               {skills?.map(({ image }, i) => (
                 <div
