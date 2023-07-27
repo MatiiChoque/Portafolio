@@ -37,7 +37,7 @@ export default async function UserPage({ params }) {
             <div className="card-body">
               <h2>Descripcion</h2>
               <h5>{description}</h5>
-              <p>{detail.cuerpo}</p>
+              <p>{detail?.cuerpo}</p>
               <h2>Funcionalidades</h2>
               {detail?.funcionalidades.map((funcion) => (
                 <ul>
