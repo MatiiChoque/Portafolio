@@ -39,8 +39,8 @@ export default async function UserPage({ params }) {
               <h5>{description}</h5>
               <p>{detail?.cuerpo}</p>
               <h2>Funcionalidades</h2>
-              {detail?.funcionalidades.map((funcion) => (
-                <ul>
+              {detail?.funcionalidades.map((funcion, i) => (
+                <ul key={i}>
                   <li>
                     <p>{funcion}</p>
                   </li>
@@ -48,16 +48,16 @@ export default async function UserPage({ params }) {
               ))}
               <h2>Tecnologias y librerias</h2>
               <h4>Front:</h4>
-              {detail?.tecnologias.front.map((tech) => (
-                <ul>
+              {detail?.tecnologias.front.map((tech, i) => (
+                <ul key={i}>
                   <li>
                     <p>{tech}</p>
                   </li>
                 </ul>
               ))}
               <h4>Backend:</h4>
-              {detail?.tecnologias.back.map((tech) => (
-                <ul>
+              {detail?.tecnologias.back.map((tech, i) => (
+                <ul key={i}>
                   <li>
                     <p>{tech}</p>
                   </li>
