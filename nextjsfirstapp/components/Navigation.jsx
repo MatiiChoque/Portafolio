@@ -18,13 +18,13 @@ export default function Navigation() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+        {/* <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav ms-auto">
             <Link className="nav-link" href="/github">
               Github
             </Link>
           </div>
-        </div>
+        </div> */}
       </div>
     </nav>
   );
