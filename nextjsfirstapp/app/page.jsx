@@ -28,7 +28,7 @@ export default async function IndexPage() {
               style={{ display: "flex", alignItems: "center" }}
             >
               <h3>Bienvenido!</h3>
-              <h1>Matias Choque</h1>
+              <h1>Matías Choque</h1>
               <h3>Desarrollador Web Full Stack</h3>
               <h5>
                 <Image
@@ -64,7 +64,7 @@ export default async function IndexPage() {
             style={{ backgroundColor: "#e8ddcb" }}
           >
             <div className="card-body">
-              <h1>Informacion Personal</h1>
+              <h1>Información Personal</h1>
               <ul>
                 <li>
                   <p>{profile.presentacion}</p>
@@ -113,12 +113,14 @@ export default async function IndexPage() {
                     style={{ backgroundColor: "#cdb380" }}
                   >
                     <div className="overflow">
-                      <img src={image} alt="" className="card-img-top" />
+                      <img src={image} alt="" className="card-img-top h-100" />
                     </div>
                     <div className="card-body">
                       <h3>{name}</h3>
                       <p>{description}</p>
-                      <Link href={`/projects/${id}`}>Más Informacion</Link>
+                      <div className="bg-dark" style={{width:"24%"}}>
+                      <Link href={`/projects/${id}`} className="btn btn-outline-light border border-dark">Ver más</Link>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -132,11 +134,11 @@ export default async function IndexPage() {
           </div>
         </div>
       </div>
-      {/* {Tecnologias} */}
+      {/* {Tecnologías} */}
       <div className="col-md-12 pt-2">
         <div className="card bg-light ">
           <div className="card-body " style={{ backgroundColor: "#e8ddcb" }}>
-            <h1 className="pb-2">Tecnologias</h1>
+            <h1 className="pb-2">Tecnologías</h1>
             <div className="gallerytech">
               {skills?.map(({ image }, i) => (
                 <div

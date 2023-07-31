@@ -16,8 +16,8 @@ export default async function UserPage({ params }) {
   return (
     <div className="row d-flex justify-content-center">
       <div className="col-md-8 ">
-        <div className="card">
-          <div className="card-header text-center">
+        <div className="card" style={{ backgroundColor: "#e8ddcb" }} >
+          <div className="card-header text-center" >
             <h1>{name}</h1>
           </div>
           <div className="card-body text-center">
@@ -32,22 +32,23 @@ export default async function UserPage({ params }) {
             </div>
           </div>
         </div>
-        <div className="col-md-12 ">
+        <div className="col-md-12 py-2">
           <div className="card" style={{ backgroundColor: "#e8ddcb" }}>
             <div className="card-body">
-              <h2>Descripcion</h2>
+              <h2 className="text-center p-2">Descripción</h2>
               <h5>{description}</h5>
               <p>{detail?.cuerpo}</p>
-              <h2>Funcionalidades</h2>
+              {detail.funcionalidades.length ? <><h2>Funcionalidades</h2>
               {detail?.funcionalidades.map((funcion, i) => (
                 <ul key={i}>
                   <li>
                     <p>{funcion}</p>
                   </li>
                 </ul>
-              ))}
-              <h2>Tecnologias y librerias</h2>
-              <h4>Front:</h4>
+              ))}</>:<></>}
+              
+              <h2 className="text-center p-2">Tecnologías y librerías</h2>
+              <h4 className="p-1">Front:</h4>
               {detail?.tecnologias.front.map((tech, i) => (
                 <ul key={i}>
                   <li>
@@ -55,7 +56,7 @@ export default async function UserPage({ params }) {
                   </li>
                 </ul>
               ))}
-              <h4>Backend:</h4>
+              <h4 className="p-1">Backend:</h4>
               {detail?.tecnologias.back.map((tech, i) => (
                 <ul key={i}>
                   <li>
