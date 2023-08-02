@@ -163,7 +163,7 @@ export const projects = [
   },
 ];
 export const profile = {
-  presentacion: `¡Hola! Gusto en conocerte, Soy Matías, un apasionado por la tecnología y la programación. Desde pequeño sentí un gran interés por la tecnología, soy estudiante universitario de la carrera Ingeniería Informática, e igualmente sigo en constante crecimiento aprovechando todo tipo de información y cursos, actualmente acabo de terminar un bootcamp en programación (SoyHenry).`,
+  presentacion: `¡Hola! Gusto en conocerte, soy Matías, un apasionado por la tecnología y la programación. Desde pequeño sentí un gran interés por la tecnología, soy estudiante universitario de la carrera Ingeniería Informática, e igualmente sigo en constante crecimiento aprovechando todo tipo de información y cursos, actualmente acabo de terminar un bootcamp en programación (SoyHenry).`,
   background:
     "Tengo experiencia en el manejo de grupos, liderazgo , capacitación y entrenamiento de personas. Trabajé 9 años en un Hospital Militar de los cuales casi 8 años y 6 meses los desempeñe como encargado. Me caracterizo por ser una persona organizada, responsable, comprometida y dedicada. Busco siempre cumplir con los objetivos de la mejor manera adaptándome al entorno constantemente. Me gusta trabajar y generar ambientes laborales confortables y organizados. Disfruto ayudar y trabajar en equipo, también soy una persona abierta a los feedbacks constructivos.",
   pasatiempos:
