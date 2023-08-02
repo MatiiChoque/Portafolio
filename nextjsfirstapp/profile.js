@@ -113,7 +113,7 @@ export const projects = [
   {
     id: 2,
     name: "AppCountries",
-    description: `Esta aplicación web está creada para tener un lugar de consulta sobre países de todo el mundo.`,
+    description: `Esta aplicación web fue creada para tener un lugar de consulta sobre países de todo el mundo.`,
     detail: {
       funcionalidades: [
         "REST API",
@@ -148,20 +148,15 @@ export const projects = [
       El principal desafío era mantener la aplicación adaptable y atractiva para todos los tamaños de pantalla, desde un móvil pequeño hasta pantallas grandes. En este proyecto aprendí a trabajar de manera más efectiva y rápida. Como resultado, logre crear un producto que se adapta exitosamente a cualquier dispositivo, manteniendo el balance y la integridad sin dejar de lado la funcionalidad y la estética. 
       `,
       tecnologias: {
-        front: ["React.js", "Redux", "Axios", "Typescript", "Sass"],
-        back: [
+        front: [
+          "React.js",
+          "Next.js",
+          "Bootstrap",
           "Javascript",
-          "Node.js",
-          "Mongoose",
-          "Multer",
-          "Express.js",
-          "Bcrypt",
-          "JWT",
-          "Mercado Pago",
-          "Google",
-          "Nodemailer",
-          "Cloudinary",
+          "HTML",
+          "CSS",
         ],
+        back: [],
       },
     },
     image: "portafolio.JPG",

@@ -16,8 +16,8 @@ export default async function UserPage({ params }) {
   return (
     <div className="row d-flex justify-content-center">
       <div className="col-md-8 ">
-        <div className="card" style={{ backgroundColor: "#e8ddcb" }} >
-          <div className="card-header text-center" >
+        <div className="card" style={{ backgroundColor: "#e8ddcb" }}>
+          <div className="card-header text-center">
             <h1>{name}</h1>
           </div>
           <div className="card-body text-center">
@@ -36,34 +36,58 @@ export default async function UserPage({ params }) {
           <div className="card" style={{ backgroundColor: "#e8ddcb" }}>
             <div className="card-body">
               <h2 className="text-center p-2">Descripción</h2>
-              <h5>{description}</h5>
-              <p>{detail?.cuerpo}</p>
-              {detail.funcionalidades.length ? <><h2>Funcionalidades</h2>
-              {detail?.funcionalidades.map((funcion, i) => (
-                <ul key={i}>
-                  <li>
-                    <p>{funcion}</p>
-                  </li>
-                </ul>
-              ))}</>:<></>}
-              
-              <h2 className="text-center p-2">Tecnologías y librerías</h2>
-              <h4 className="p-1">Front:</h4>
-              {detail?.tecnologias.front.map((tech, i) => (
-                <ul key={i}>
-                  <li>
-                    <p>{tech}</p>
-                  </li>
-                </ul>
-              ))}
-              <h4 className="p-1">Backend:</h4>
-              {detail?.tecnologias.back.map((tech, i) => (
-                <ul key={i}>
-                  <li>
-                    <p>{tech}</p>
-                  </li>
-                </ul>
-              ))}
+              <h5 className=" my-1 mx-4">{description}</h5>
+              <p className="mt-3 mx-4">{detail?.cuerpo}</p>
+              {detail?.funcionalidades?.length ? (
+                <>
+                  <h2 className="text-center py-2">Funcionalidades</h2>
+                  <div className="d-flex flex-wrap justify-content-center ">
+                    {detail?.funcionalidades?.map((funcion, i) => (
+                      <span
+                        key={i}
+                        className="py-3 mx-2 my-2 badge rounded-pill  w-auto"
+                        style={{ backgroundColor: "#17a7a8" }}
+                      >
+                        {funcion}
+                      </span>
+                    ))}
+                  </div>
+                </>
+              ) : (
+                <></>
+              )}
+
+              <h2 className="text-center py-4">Tecnologías y librerías</h2>
+              <h4 className="text-center my-3">Front</h4>
+              <div className="d-flex flex-wrap justify-content-center ">
+                {detail?.tecnologias?.front?.map((tech, i) => (
+                  <span
+                    key={i}
+                    className="py-2 mx-2 my-2 badge rounded-pill text-bg-primary  w-auto"
+                    style={{ backgroundColor: "#17a7a8" }}
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              {detail?.tecnologias?.back?.length ? (
+                <>
+                  <h4 className="text-center my-3">Back</h4>
+                  <div className="d-flex flex-wrap justify-content-center ">
+                    {detail?.tecnologias?.back?.map((tech, i) => (
+                      <span
+                        key={i}
+                        className="py-2 mx-2 my-2 badge rounded-pill   w-auto"
+                        style={{ backgroundColor: "#267705" }}
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </>
+              ) : (
+                <></>
+              )}
             </div>
           </div>
         </div>
